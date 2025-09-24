@@ -1,0 +1,90 @@
+/* ==========================================================================
+   HERO SECTION - (DÜZELTİLMİŞ YAPI)
+   ========================================================================== */
+   
+  .hero-banner {
+    position: relative;
+    /* DÜZELTME: Yükseklik isteğiniz üzerine %70 olarak değiştirildi. */
+    height: 90vh;
+    display: flex;
+    /* DÜZELTME: İçeriği dikeyde ortalamak için değiştirildi. */
+    align-items: center;
+    /* DÜZELTME: İçeriği yatayda sola hizalar. */
+    justify-content: center; /* İçeriği yatayda ortalar */
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://www.dreamtimemobilya.com/img/product/b/1451.jpg');
+    /* DÜZELTME: Sol boşluğu ayarlamak için padding değiştirildi. */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay rengi biraz açıldı */
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center; /* Metinleri ortalar */
+    max-width: 800px;
+    display: flex; /* İçerik öğelerini dikeyde sırala */
+    flex-direction: column;
+    align-items: center; /* İçerik öğelerini yatayda ortala */
+  }
+  
+  .eyebrow {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    /* DÜZELTME: Yazı rengi beyaz yapıldı. */
+    color: #fff;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    /* DÜZELTME: Yazı rengi beyaz yapıldı. */
+    color: #fff;
+  }
+  
+  .contact-button.gold {
+    background-color: #cda45e;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition:  0.3s ease;
+  }
+  
+  .contact-button.gold:hover {
+    background-color: #b8914e;
+  }
+
+  @media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-banner {
+      padding: 30px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
