@@ -71,6 +71,7 @@
   
   .contact-button.gold:hover {
     background-color: #b8914e;
+    color: black;
   }
 
   @media (max-width: 992px) {
