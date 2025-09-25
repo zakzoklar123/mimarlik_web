@@ -18,7 +18,9 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
+
+
   .hero-overlay {
     position: absolute;
     top: 0;
