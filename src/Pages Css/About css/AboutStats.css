@@ -39,7 +39,7 @@
 }
 
 .stats-title {
-  color: #333;
+  color: #1e3c72;
 }
 
 .stats-title::after {
@@ -50,7 +50,7 @@
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background-color: #f28d27;
+  background-color: #cda45e;
 }
 
 .stats-subtitle {

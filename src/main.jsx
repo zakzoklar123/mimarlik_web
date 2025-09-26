@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
 import Services from './Pages/Services.jsx';
+import Blog from './Pages/Blog.jsx';
+import Contact from './Pages/Contact.jsx';
 
 import './Pages Css/Home css/General.css';
 import './Pages Css/Home css/AppBar.css';
@@ -23,6 +25,10 @@ import './Pages Css/About css/AboutProcess.css';
 import './Pages Css/About css/AboutTeam.css';
 import './Pages Css/Services css/ServicesHero.css';
 import './Pages Css/Services css/ServicesList.css';
+import './Pages Css/Blog css/BlogHero.css';
+import './Pages Css/Blog css/BlogPosts.css';
+import './Pages Css/Contact css/ContactForm.css';
+import './Pages Css/Contact css/ContactSocial.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,6 +37,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="services" element={<Services />} />
+        <Route path="blog" element={<Blog />} />
+        <Route path="contact" element={<Contact />} />
       </Routes>
     </Router>
   </React.StrictMode>,

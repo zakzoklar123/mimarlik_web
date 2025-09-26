@@ -14,7 +14,7 @@
 
 .about-hero-title {
   font-size: 2.8em;
-  color: #333;
+  color: #1e3c72;
   margin-bottom: 10px;
   position: relative;
   display: inline-block;
@@ -22,7 +22,7 @@
 
 .about-hero-subtitle {
   font-size: 1.4em;
-  color: #666;
+  color: #cda45e;
   margin-bottom: 25px;
   text-align: center;
 }
@@ -35,7 +35,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 4px;
-  background-color: #f28d27;
+  background-color: #cda45e;
 }
 
 .about-hero-text {

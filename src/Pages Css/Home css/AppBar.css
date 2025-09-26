@@ -40,9 +40,13 @@
   transition: color 0.3s ease;
 }
 
-.nav-item a:hover,
+.nav-item a:hover {
+  color: #cda45e;
+}
+
 .nav-item.active a {
   color: #cda45e;
+  font-weight: 600;
 }
 
 .nav-underline {

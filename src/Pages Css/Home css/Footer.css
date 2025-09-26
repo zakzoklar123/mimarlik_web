@@ -2,24 +2,16 @@
   background-color: #1a1a1a;
   color: #f2f2f2;
   padding: 60px 30px 20px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   max-width: none;
   margin: 0;
-  flex-wrap: wrap;
 }
 
-.footer-left {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-  flex-basis: content;
-  justify-content: flex-start;
-}
+/* Footer columns are now direct children of main-footer */
 
 .footer-column {
   display: flex;
@@ -30,9 +22,8 @@
 }
 
 .footer-column.footer-map {
-  flex-grow: 1;
-  min-width: 300px;
   text-align: right;
+  max-width: 250px;
 }
 
 .footer-column h4 {
@@ -46,6 +37,20 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #cda45e;
 }
 
 .footer-column li {
@@ -63,7 +68,7 @@
 }
 
 .google-map-placeholder {
-  width: 600px;
+  width: 100%;
   height: 200px;
   border-radius: 5px;
   overflow: hidden;
@@ -92,37 +97,27 @@
   .main-footer {
     padding: 50px 25px 15px 25px;
     gap: 30px;
-  }
-  
-  .footer-left {
-    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   
   .footer-column {
     min-width: 160px;
   }
   
-  .footer-column.footer-map {
-    min-width: 280px;
-  }
-  
   .google-map-placeholder {
-    width: 500px;
+    width: 100%;
+    max-width: 250px;
     height: 180px;
   }
 }
 
 @media (max-width: 992px) {
   .main-footer {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding: 40px 20px 15px 20px;
     gap: 25px;
     text-align: center;
-  }
-  
-  .footer-left {
-    justify-content: center;
-    gap: 25px;
   }
   
   .footer-column {
@@ -151,11 +146,9 @@
 
 @media (max-width: 768px) {
   .main-footer {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 35px 15px 12px 15px;
-    gap: 20px;
-  }
-  
-  .footer-left {
     gap: 20px;
   }
   
