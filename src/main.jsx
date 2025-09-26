@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home.jsx';
 import About from './Pages/About.jsx';
+import Services from './Pages/Services.jsx';
 
 import './Pages Css/Home css/General.css';
 import './Pages Css/Home css/AppBar.css';
@@ -20,6 +21,8 @@ import './Pages Css/About css/AboutStats.css';
 import './Pages Css/About css/AboutValues.css';
 import './Pages Css/About css/AboutProcess.css';
 import './Pages Css/About css/AboutTeam.css';
+import './Pages Css/Services css/ServicesHero.css';
+import './Pages Css/Services css/ServicesList.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -27,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="services" element={<Services />} />
       </Routes>
     </Router>
   </React.StrictMode>,

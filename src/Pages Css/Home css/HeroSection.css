@@ -5,7 +5,7 @@
   .hero-banner {
     position: relative;
     /* DÜZELTME: Yükseklik isteğiniz üzerine %70 olarak değiştirildi. */
-    height: 90vh;
+    height: 60vh;
     display: flex;
     /* DÜZELTME: İçeriği dikeyde ortalamak için değiştirildi. */
     align-items: center;

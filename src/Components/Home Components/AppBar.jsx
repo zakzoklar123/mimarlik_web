@@ -26,7 +26,7 @@ function AppBar() {
           <ul>
             <li className="nav-item active"><Link to="/">Anasayfa</Link><span className="nav-underline" /></li>
             <li className="nav-item"><Link to="/about">Hakkımızda</Link><span className="nav-underline" /></li>
-            <li className="nav-item"><Link to="#">Hizmetlerimiz</Link><span className="nav-underline" /></li>
+            <li className="nav-item"><Link to="/services">Hizmetlerimiz</Link><span className="nav-underline" /></li>
             <li className="nav-item"><Link to="#">Blog</Link><span className="nav-underline" /></li>
             <li className="nav-item"><Link to="#">İletişim</Link><span className="nav-underline" /></li>
           </ul>
