@@ -88,35 +88,153 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .main-footer {
-      grid-template-columns: 1fr;
-      text-align: center;
+    padding: 50px 25px 15px 25px;
+    gap: 30px;
+  }
+  
+  .footer-left {
+    gap: 30px;
   }
   
   .footer-column {
-      margin-bottom: 30px;
+    min-width: 160px;
+  }
+  
+  .footer-column.footer-map {
+    min-width: 280px;
+  }
+  
+  .google-map-placeholder {
+    width: 500px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main-footer {
+    flex-direction: column;
+    padding: 40px 20px 15px 20px;
+    gap: 25px;
+    text-align: center;
+  }
+  
+  .footer-left {
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  .footer-column {
+    margin-bottom: 25px;
+    min-width: 140px;
   }
 
   .footer-column.footer-map {
-      grid-column: span 1;
-      min-width: unset;
-      order: 4;
+    min-width: unset;
+    order: 4;
+    text-align: center;
+  }
+  
+  .google-map-placeholder {
+    width: 100%;
+    max-width: 400px;
+    height: 160px;
+    margin: 0 auto;
   }
 
   .footer-bottom {
-      margin-top: 20px;
-      padding-top: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-footer {
+    padding: 35px 15px 12px 15px;
+    gap: 20px;
+  }
+  
+  .footer-left {
+    gap: 20px;
+  }
+  
+  .footer-column {
+    margin-bottom: 20px;
+    min-width: 120px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column a, .footer-column p {
+    font-size: 0.9rem;
+  }
+  
+  .google-map-placeholder {
+    height: 140px;
   }
 }
 
 @media (max-width: 576px) {
   .main-footer {
-      text-align: center;
-      padding: 40px 15px 20px 15px;
+    padding: 30px 12px 10px 12px;
+    gap: 15px;
   }
-
+  
+  .footer-left {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
   .footer-column {
-      margin-bottom: 20px;
+    margin-bottom: 15px;
+    min-width: 100px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  
+  .footer-column a, .footer-column p {
+    font-size: 0.85rem;
+  }
+  
+  .footer-column li {
+    margin-bottom: 8px;
+  }
+  
+  .google-map-placeholder {
+    height: 120px;
+  }
+  
+  .footer-bottom {
+    margin-top: 15px;
+    padding-top: 12px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-footer {
+    padding: 25px 10px 8px 10px;
+  }
+  
+  .footer-column h4 {
+    font-size: 0.95rem;
+  }
+  
+  .footer-column a, .footer-column p {
+    font-size: 0.8rem;
+  }
+  
+  .google-map-placeholder {
+    height: 100px;
   }
 }

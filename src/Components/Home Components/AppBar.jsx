@@ -1,6 +1,7 @@
 // AppBar.jsx
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function AppBar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -12,7 +13,7 @@ function AppBar() {
     <>
       <header className="app-bar">
         <div className="logo">
-          <a href="#"><img src="https://i.hizliresim.com/c7jjn83.PNG" alt="" /></a>
+          <Link to="/"><img src="https://i.hizliresim.com/c7jjn83.PNG" alt="" /></Link>
         </div>
 
         <button className="hamburger-menu" onClick={toggleNav} aria-label="Menüyü aç">
@@ -23,11 +24,11 @@ function AppBar() {
 
         <nav className={isNavOpen ? 'nav-open' : ''}>
           <ul>
-            <li className="nav-item active"><a href="#">Anasayfa</a><span className="nav-underline" /></li>
-            <li className="nav-item"><a href="#">Hakkımızda</a><span className="nav-underline" /></li>
-            <li className="nav-item"><a href="#">Hizmetlerimiz</a><span className="nav-underline" /></li>
-            <li className="nav-item"><a href="#">Blog</a><span className="nav-underline" /></li>
-            <li className="nav-item"><a href="#">İletişim</a><span className="nav-underline" /></li>
+            <li className="nav-item active"><Link to="/">Anasayfa</Link><span className="nav-underline" /></li>
+            <li className="nav-item"><Link to="/about">Hakkımızda</Link><span className="nav-underline" /></li>
+            <li className="nav-item"><Link to="#">Hizmetlerimiz</Link><span className="nav-underline" /></li>
+            <li className="nav-item"><Link to="#">Blog</Link><span className="nav-underline" /></li>
+            <li className="nav-item"><Link to="#">İletişim</Link><span className="nav-underline" /></li>
           </ul>
         </nav>
       </header>

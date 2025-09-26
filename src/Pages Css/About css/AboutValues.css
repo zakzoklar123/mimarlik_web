@@ -1,0 +1,225 @@
+/* AboutValues.css */
+
+.about-values-section {
+  padding: 60px 20px;
+  background-color: #f0f2f5;
+  text-align: center;
+}
+
+.about-values-title {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-values-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #f28d27;
+}
+
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns on larger screens */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Add box-sizing to the container */
+}
+
+.value-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  box-sizing: border-box; /* Ensure consistent box model */
+  width: 100%; /* Explicitly set width to 100% of grid cell */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  margin: 0 auto 20px;
+  transition: transform 0.3s ease;
+}
+
+.value-card:hover .value-icon {
+  transform: scale(1.1);
+}
+
+.value-icon i {
+  font-size: 2.8em;
+  color: #f28d27;
+}
+
+.value-card h3 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.value-card p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #777;
+}
+
+@media (max-width: 1200px) {
+  .about-values-section {
+    padding: 50px 20px;
+  }
+  
+  .about-values-title {
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+  
+  .values-container {
+    gap: 18px;
+  }
+  
+  .value-card {
+    padding: 25px;
+  }
+  
+  .value-icon i {
+    font-size: 2.5em;
+  }
+  
+  .value-card h3 {
+    font-size: 1.4em;
+  }
+  
+  .value-card p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-values-section {
+    padding: 40px 20px;
+  }
+  
+  .about-values-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .values-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .value-card {
+    padding: 20px;
+  }
+  
+  .value-icon i {
+    font-size: 2.2em;
+  }
+  
+  .value-card h3 {
+    font-size: 1.3em;
+    margin-bottom: 12px;
+  }
+  
+  .value-card p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-values-title {
+    font-size: 1.6em;
+  }
+  
+  .values-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  
+  .value-card {
+    padding: 18px;
+  }
+  
+  .value-icon i {
+    font-size: 2em;
+  }
+  
+  .value-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  .value-card p {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-values-section {
+    padding: 30px 15px;
+  }
+  
+  .about-values-title {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+  }
+  
+  .values-container {
+    gap: 10px;
+  }
+  
+  .value-card {
+    padding: 15px;
+  }
+  
+  .value-icon i {
+    font-size: 1.8em;
+  }
+  
+  .value-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+  
+  .value-card p {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-values-title {
+    font-size: 1.2em;
+  }
+  
+  .value-card {
+    padding: 12px;
+  }
+  
+  .value-icon i {
+    font-size: 1.6em;
+  }
+  
+  .value-card h3 {
+    font-size: 1em;
+  }
+  
+  .value-card p {
+    font-size: 0.75em;
+  }
+}

@@ -82,3 +82,140 @@
 .card-bg-1 { background-image: url('https://efeogluas.com/wp-content/uploads/2024/01/sade-villa-projesi-ic-mimari-mutfak-tasarimi.webp'); }
 .card-bg-2 { background-image: url('https://efeogluas.com/wp-content/uploads/2024/01/sade-villa-projesi-ic-mimari-salon-tasarimi.webp'); }
 .card-bg-3 { background-image: url('https://gizempakyurek.com/uploads/images/1636902832732-cagdas-ic-mimari-stili.jpg'); }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 60px 15px;
+  }
+  
+  .about-cards {
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    height: 220px;
+  }
+  
+  .card h4 {
+    font-size: 1.4rem;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    padding: 50px 15px;
+  }
+  
+  .about-section h3 {
+    font-size: 1.6rem;
+  }
+  
+  .about-section p {
+    font-size: 0.95rem;
+  }
+  
+  .about-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+  }
+  
+  .card {
+    height: 200px;
+  }
+  
+  .card h4 {
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 40px 15px;
+  }
+  
+  .about-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .card {
+    height: 180px;
+  }
+  
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 30px 10px;
+  }
+  
+  .about-section h3 {
+    font-size: 1.2rem;
+  }
+  
+  .about-section p {
+    font-size: 0.85rem;
+  }
+  
+  .card {
+    height: 160px;
+    padding: 15px;
+  }
+  
+  .card h4 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .card p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 25px 8px;
+  }
+  
+  .card {
+    height: 140px;
+    padding: 12px;
+  }
+  
+  .card h4 {
+    font-size: 1rem;
+  }
+  
+  .card p {
+    font-size: 0.75rem;
+  }
+}

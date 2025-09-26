@@ -1,5 +1,4 @@
 import '../Pages Css/Home css/General.css';
-import '../Pages Css/Home css/AppBar.css';
 import '../Pages Css/Home css/HeroSection.css';
 import '../Pages Css/Home css/ServicesSection.css';
 import '../Pages Css/Home css/ProjectsSection.css';
@@ -19,22 +18,20 @@ import PartnersSection from '../Components/Home Components/PartnersSection';
 import BlogSection from '../Components/Home Components/BlogSection';
 import Footer from '../Components/Home Components/Footer';
 
-function App() {
+function Home() {
   return (
     <>
       <AppBar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ServicesSection />
-        <DesignInfoSection />
-        <ProjectsSection />
-        <PartnersSection />
-        <BlogSection />
-      </main>
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <DesignInfoSection />
+      <ProjectsSection />
+      <PartnersSection />
+      <BlogSection />
       <Footer />
     </>
   );
 }
 
-export default App;
+export default Home;

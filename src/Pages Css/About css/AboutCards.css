@@ -1,0 +1,228 @@
+/* AboutCards.css */
+
+.about-cards-section {
+  padding: 0 20px;
+  max-width: 1200px; /* Add max-width to center content */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-cards-title {
+  font-size: 2.2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.about-cards-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #f28d27;
+}
+
+.about-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  display: flex; /* Use flexbox for image and content */
+  margin-bottom: 40px; /* Add space between cards */
+  text-align: left; /* Adjust text alignment for new layout */
+  transition: transform 0.3s ease;
+}
+
+.about-card:nth-child(even) {
+  flex-direction: row-reverse; /* Alternate image position */
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+}
+
+.about-card-image {
+  width: 40%; /* Image takes 40% width */
+  flex-shrink: 0;
+}
+
+.about-card-image img {
+  width: 100%;
+  height: 100%; /* Make image fill the height of the card */
+  object-fit: cover;
+  display: block;
+}
+
+.about-card-content {
+  padding: 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-card-content h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.about-card-content p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1200px) {
+  .about-cards-section {
+    padding: 0 15px;
+  }
+  
+  .about-cards-title {
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+  
+  .about-card-content {
+    padding: 18px;
+  }
+  
+  .about-card-content h3 {
+    font-size: 1.4em;
+  }
+  
+  .about-card-content p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-cards-title {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  
+  .about-card {
+    margin-bottom: 30px;
+  }
+  
+  .about-card-content {
+    padding: 15px;
+  }
+  
+  .about-card-content h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+  }
+  
+  .about-card-content p {
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-card {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    display: flex !important;
+  }
+
+  .about-card:nth-child(even) {
+    flex-direction: column !important;
+  }
+
+  .about-card-image,
+  .about-card-content {
+    width: 100% !important;
+  }
+
+  .about-card-image {
+    order: -1 !important; /* Resmi üstte göster */
+    flex-shrink: 0 !important;
+  }
+
+  .about-card-content {
+    order: 1 !important; /* Metni altta göster */
+    padding: 15px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .about-card-image img {
+    height: 200px !important;
+    width: 100% !important;
+  }
+
+  .about-card-content h3 {
+    font-size: 1.2em !important;
+  }
+
+  .about-card-content p {
+    font-size: 0.85em !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-cards-section {
+    padding: 0 10px;
+  }
+  
+  .about-cards-title {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+  
+  .about-card {
+    margin-bottom: 20px;
+  }
+  
+  .about-card-image img {
+    height: 180px;
+  }
+
+  .about-card-content {
+    padding: 12px;
+  }
+
+  .about-card-content h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  .about-card-content p {
+    font-size: 0.8em;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-cards-title {
+    font-size: 1.4em;
+  }
+  
+  .about-card-image img {
+    height: 160px;
+  }
+
+  .about-card-content h3 {
+    font-size: 1em;
+  }
+
+  .about-card-content p {
+    font-size: 0.75em;
+  }
+}

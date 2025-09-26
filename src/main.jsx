@@ -1,18 +1,33 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './Pages/Home.jsx'
-import './Pages Css/Home css/Appbar.css'
-import './Pages Css/Home css/AboutSection.css'
-import './Pages Css/Home css/BlogSection.css'
-import './Pages Css/Home css/DesignInfoSection.css'
-import './Pages Css/Home css/Footer.css'
-import './Pages Css/Home css/HeroSection.css'
-import './Pages Css/Home css/PartnersSection.css'
-import './Pages Css/Home css/ProjectsSection.css'
-import './Pages Css/Home css/ServicesSection.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home.jsx';
+import About from './Pages/About.jsx';
+
+import './Pages Css/Home css/General.css';
+import './Pages Css/Home css/AppBar.css';
+import './Pages Css/Home css/HeroSection.css';
+import './Pages Css/Home css/ServicesSection.css';
+import './Pages Css/Home css/ProjectsSection.css';
+import './Pages Css/Home css/AboutSection.css';
+import './Pages Css/Home css/BlogSection.css';
+import './Pages Css/Home css/PartnersSection.css';
+import './Pages Css/Home css/DesignInfoSection.css';
+import './Pages Css/Home css/Footer.css';
+import './Pages Css/About css/AboutHero.css';
+import './Pages Css/About css/AboutCards.css';
+import './Pages Css/About css/AboutStats.css';
+import './Pages Css/About css/AboutValues.css';
+import './Pages Css/About css/AboutProcess.css';
+import './Pages Css/About css/AboutTeam.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
-)
+);

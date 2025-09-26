@@ -77,49 +77,138 @@
   transition: all 0.3s ease;
 }
 
+@media (max-width: 1200px) {
+  .app-bar {
+    padding: 12px 25px;
+  }
+  
+  .nav-item {
+    margin: 0 12px;
+  }
+  
+  .nav-item a {
+    font-size: 0.95rem;
+  }
+}
+
 @media (max-width: 992px) {
-    .app-bar {
-        padding: 15px;
-    }
+  .app-bar {
+    padding: 10px 15px;
+  }
 
-    .app-bar nav {
-        display: none;
-        position: absolute;
-        top: 67px;
-        left: 0;
-        right: 0;
-        background-color: #fff;
-        width: 100%;
-        flex-direction: column;
-        padding: 10px 0;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-      
-    .app-bar nav.nav-open {
-        display: flex;
-    }
+  .app-bar nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+    
+  .app-bar nav.nav-open {
+    display: flex;
+  }
 
-    .app-bar nav ul {
-        flex-direction: column;
-        width: 100%;
-    }
+  .app-bar nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .nav-item {
-        text-align: center;
-        margin: 0;
-    }
-      
-    .nav-item a {
-        padding: 15px;
-        display: block;
-        width: 100%;
-    }
-      
-    .nav-underline {
-        display: none;
-    }
+  .nav-item {
+    text-align: center;
+    margin: 0;
+  }
+    
+  .nav-item a {
+    padding: 12px;
+    display: block;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+    
+  .nav-underline {
+    display: none;
+  }
 
-    .hamburger-menu {
-        display: block;
-    }
+  .hamburger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-bar {
+    padding: 8px 12px;
+  }
+  
+  .logo a img {
+    width: 15%;
+    height: 8%;
+  }
+  
+  .app-bar nav {
+    top: 55px;
+  }
+  
+  .nav-item a {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .hamburger-menu .line {
+    width: 22px;
+    height: 2px;
+    margin: 4px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-bar {
+    padding: 6px 10px;
+  }
+  
+  .logo a img {
+    width: 12%;
+    height: 6%;
+  }
+  
+  .app-bar nav {
+    top: 50px;
+  }
+  
+  .nav-item a {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .hamburger-menu .line {
+    width: 20px;
+    height: 2px;
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-bar {
+    padding: 5px 8px;
+  }
+  
+  .logo a img {
+    width: 10%;
+    height: 5%;
+  }
+  
+  .nav-item a {
+    padding: 6px;
+    font-size: 0.75rem;
+  }
+  
+  .hamburger-menu .line {
+    width: 18px;
+    height: 1px;
+    margin: 2px 0;
+  }
 }
