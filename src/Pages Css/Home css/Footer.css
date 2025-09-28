@@ -67,18 +67,6 @@
   color: #cda45e;
 }
 
-.google-map-placeholder {
-  width: 100%;
-  height: 200px;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.google-map-placeholder iframe {
-  width: 100%;
-  height: 100%;
-}
 
 .footer-bottom {
   grid-column: 1 / -1;
